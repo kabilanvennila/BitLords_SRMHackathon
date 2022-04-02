@@ -1,1 +1,72 @@
-/* Stylesheet for summary.html */
+nav{
+    width: 100%;
+  }
+  body {
+      margin-right:30px;
+      margin-left:30px;
+      margin-top:25px;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+  .but{
+    padding-bottom: 3%;
+  }
+  
+    #terminal {
+      background: rgb(27, 26, 26);
+      color: #FFFFFF;
+      display: table;
+      width:50vw;
+      width: 80%;
+      height: 80%;
+      border: 1px solid #f2f2f2;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px #909090;
+      font-size:20px;
+    
+      /*  */
+      padding-left:50px;
+      padding-top:55px;
+      padding-bottom:45px;
+      padding-right:80px;
+    }
+    #terminal .header-terminal {
+      /* width: 100%; */
+      float: left;
+      background: #28282B;
+      height: 25px;
+      border-radius: 10px 10px 0 0;
+    }
+    #terminal .header-terminal ul {
+      list-style: none;
+      padding: 5px;
+      margin: 0;
+    }
+    #terminal .header-terminal li {
+      display: table;
+      padding: 0 3px;
+      float: left;
+    }
+    #terminal .header-terminal li a {
+      border-radius: 15px;
+      float: left;
+      width: 15px;
+      height: 15px;
+      box-shadow: inset 0px 0px 4px #fff;
+    }
+    #terminal .header-terminal li .close {
+      background: red;
+    }
+    #terminal .header-terminal li .maximize {
+      background: rgb(15, 214, 15);
+    }
+    #terminal .header-terminal li .minimize {
+      background: gold;
+    }
+    #terminal .body-terminal {
+      width: 100%;
+      float: left;
+      padding: 10px;
+    }
