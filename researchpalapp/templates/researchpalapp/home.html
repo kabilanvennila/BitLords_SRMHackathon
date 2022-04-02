@@ -1,2 +1,58 @@
 {% load static %}
+<title>ResearchPal</title>{% load static %}
 <title>ResearchPal</title>
+<link rel="icon" type="image/x-icon" href="">
+<link rel="stylesheet" href="{% static 'researchpalapp/css/home.css' %}" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'researchpalapp/js/file.js' %}"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<nav class="navbar navbar-dark bg-primary">
+  <a class="navbar-brand" href="#" style="padding-left: 1%; padding-right: 2%;">
+    <img src="{% static 'researchpalapp/images/logo.jpeg' %}" width="50" height="50" alt="">   ResearchPal
+  </a>
+</nav>
+
+<main>
+    <div class="big-wrapper light">
+      <img src="./img/shape.png" alt="" class="shape" />
+
+      <header id="hero-contain">
+        <div class="container">
+          <!-- <div class="logo">
+            <img src="./img/logo.png" alt="Logo" />
+            <h3>ResearchPal</h3>
+          </div> -->
+
+          <div class="overlay"></div>
+      </header>
+
+      <div class="showcase-area">
+        <div class="container">
+          <div class="left">
+            <div class="big-title">
+              <h1>Are you bored of reading research papers that are over 100 pages long for your school ?</h1>
+            </div>
+            <p class="text">
+                Try our AI Summarizer, Who knew research papers can be as good as Audible 😃
+            </p>
+            <div id="btn-container">
+            <div class="cta">
+              <a href="{% url 'my_file' %}" class="btn btn-primary mt-5 me-3">Summarize now ➡ </a>
+            </div>
+            <div class="container">
+              <button class="toggle-btn">
+                <i class="far fa-moon"></i>
+                <i class="far fa-sun"></i>
+              </button>
+            </div>
+          </div>
+          </div>
+
+          <div id="hero-image" class="right">
+             <img src="{% static 'researchpalapp/images/paper.jpeg' %}" alt="Paper Image" class="person" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
